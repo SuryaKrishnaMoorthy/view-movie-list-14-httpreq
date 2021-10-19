@@ -3,7 +3,7 @@ import classes from './MovieList.module.css';
 
 const MovieList = (props) => {
 	return (
-		<ul>
+		<ul className={classes['movies-list']}>
 			{props.movies.map( movie => ( <Movie key={movie.id} {...movie}/> ))}
 
 		</ul>
